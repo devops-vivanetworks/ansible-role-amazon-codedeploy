@@ -26,4 +26,4 @@
   service:
     name: codedeploy-agent
     state: "{{ codedeploy_service_state }}"
-    enabled: yes
+    enabled: "{{ codedeploy_service_enabled }}"

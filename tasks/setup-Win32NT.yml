@@ -14,5 +14,5 @@
 - name: Windows | CodeDeploy agent service
   win_service:
     name: codedeployagent
-    start_mode: auto
+    start_mode: "{{ codedeploy_service_enabled | ternary('auto', 'disabled') }}"
     state: "{{ codedeploy_service_state }}"
