@@ -12,3 +12,6 @@ codedeploy_install_script_dest: "{{ default_codedeploy_install_script_dest }}"
 
 # CodeDeploy agent service state after instalation
 codedeploy_service_state: started
+
+# Codedeploy agent service enabled after boot or not
+codedeploy_service_enabled: yes
